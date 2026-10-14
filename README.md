@@ -44,5 +44,5 @@ LevelData/      level sequence — characters, titles, interactions
 Models/         game state and level types
 Components/     one SwiftUI view per interaction type
 OracleStrokePaths.swift   stroke data for each oracle-bone character
-Assets.xcassets           pictograph artwork and textures
+Assets.xcassets           background texture
 ```
