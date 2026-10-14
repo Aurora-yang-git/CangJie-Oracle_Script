@@ -24,7 +24,9 @@ Each level picks one character and lets you *see* how a picture became writing: 
 
 **Create** — combine what you've learned on your own: 人 + 木 = 休 (rest), 日 + 月 = 明 (bright), 木 + 木 = 林, 女 + 子 = 好.
 
-A built-in voice guide narrates every level, and the whole app works with VoiceOver.
+Combinations follow the traditional compound-ideograph (会意) readings used in teaching; some etymologies are debated among scholars.
+
+Includes VoiceOver labels and spoken voice guidance for every level.
 
 ## Tech
 
@@ -35,7 +37,7 @@ A built-in voice guide narrates every level, and the whole app works with VoiceO
 
 ## Run it
 
-Open the folder in **Swift Playgrounds** (iPad or Mac) or **Xcode 16+**, then run the app target (its bundle is still named *Bone to Brush*).
+Open the folder in **Swift Playgrounds** (iPad or Mac) or **Xcode 16+**, then run the app target.
 
 ## Project layout
 
