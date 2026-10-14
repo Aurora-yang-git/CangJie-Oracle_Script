@@ -4,6 +4,16 @@ A Swift (SwiftUI) app for iPad and iPhone that teaches Chinese characters by tra
 
 Each level picks one character and lets you *see* how a picture became writing: the sun 日, the moon 月, a person 人, a tree 木. Instead of memorizing strokes, you watch, trace, shake, tap and draw your way from pictograph to modern glyph.
 
+Built for the Apple Swift Student Challenge 2026.
+
+## Why I built it
+
+I've practised calligraphy since first grade, and the more I wrote, the more I felt that Chinese characters weren't designed as symbols. They grew out of everyday life and imagination. I still remember the first time I saw an oracle-bone character turn, step by step, into the character I knew.
+
+Now, watching my younger cousins learn to read, I notice they memorise stroke order but rarely see what a character first looked like. My mom works in international trade, and whenever she explains to foreign clients what a character depicts, they are instantly drawn in.
+
+CangJie tries to keep that "so that's where it comes from" moment, for children and for people who don't read Chinese at all.
+
 ## How it plays
 
 **Learn — 9 characters, 9 different interactions**
@@ -26,7 +36,25 @@ Each level picks one character and lets you *see* how a picture became writing: 
 
 Combinations follow the traditional compound-ideograph (会意) readings used in teaching; some etymologies are debated among scholars.
 
-Includes VoiceOver labels and spoken voice guidance for every level.
+See [Accessibility](#accessibility) for how every level works with VoiceOver.
+
+## Design choices
+
+- **Every level asks for a different action** (watch, trace, draw from memory, tap, swipe, match, drag, guess), so it feels like a series of discoveries rather than a set of tasks.
+- **The player moves from guided to independent**: early levels show the way; the last levels ask them to combine characters on their own.
+- **Each oracle-to-modern morph pauses for 2.5 seconds** before moving on, leaving time for the "aha" to land.
+- **Successful combinations are marked with haptic feedback**, so creating a character is felt as well as seen.
+
+## Accessibility
+
+CangJie asks players to trace characters and drag components together. Both are gesture-based, and neither works with VoiceOver. That was the biggest accessibility challenge I faced.
+
+- **Tracing**: the canvas is an adjustable element. VoiceOver users swipe up or down to move along the guide strokes, and an auto-trace button lets them complete the stroke without drawing at all.
+- **Drag-and-combine**: draggable tiles switch to tappable buttons when VoiceOver is active. Users tap to place pieces, then use layout and swap controls to arrange them, since direction matters when forming the correct character.
+- **Voice guide**: built with AVSpeechSynthesizer, it narrates each level's context and instructions aloud, with adjustable speed. It pauses automatically when system VoiceOver is active to avoid conflict.
+- **Basics**: decorative images are hidden from VoiceOver, all buttons meet the 44-point minimum, and interactive elements have clear labels and hints.
+
+Before this project, I never thought about how someone who cannot see would use an app. Now I think about it every time I add a new screen.
 
 ## Tech
 
