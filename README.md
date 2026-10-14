@@ -1,6 +1,6 @@
-# Bone to Brush
+# CangJie 仓颉
 
-An iPad / iPhone app that teaches Chinese characters by tracing them back to their oldest form — **oracle-bone script** (甲骨文), carved on bones and shells over 3,000 years ago.
+A Swift (SwiftUI) app for iPad and iPhone that teaches Chinese characters by tracing them back to their oldest form — **oracle-bone script** (甲骨文), carved on bones and shells over 3,000 years ago.
 
 Each level picks one character and lets you *see* how a picture became writing: the sun 日, the moon 月, a person 人, a tree 木. Instead of memorizing strokes, you watch, trace, shake, tap and draw your way from pictograph to modern glyph.
 
@@ -35,7 +35,7 @@ A built-in voice guide narrates every level, and the whole app works with VoiceO
 
 ## Run it
 
-Open the folder in **Swift Playgrounds** (iPad or Mac) or **Xcode 16+**, then run the *Bone to Brush* app target.
+Open the folder in **Swift Playgrounds** (iPad or Mac) or **Xcode 16+**, then run the app target (its bundle is still named *Bone to Brush*).
 
 ## Project layout
 
